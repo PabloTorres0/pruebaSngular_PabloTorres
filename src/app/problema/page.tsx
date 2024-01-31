@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import InputValue from '../../components/InputValue'
 import CompleteSerie from '@/components/CompleteSerie'
 import ShowResults from '../../components/ShowResults'
-import totalRes from '@/utils/totalRes'
+import totalRes from '@/utils/totalRes/totalRes'
 
 interface Dataa {
   prim: number;

@@ -38,7 +38,7 @@ const InputValue : React.FC<Props> = (props) => {
         placeholder="Ingresa factor n"
         onChange={(e)=>{
             setInputValue(e.target.value)
-
+            props.getInputData(0)
         }}
       />
       <button type="submit" className="btn btn-primary">Ingresar</button>

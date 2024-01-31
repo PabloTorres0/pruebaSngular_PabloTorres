@@ -1,13 +1,11 @@
 import totalRes from './totalRes';
+import primo from '../primo/primo';
+import triangular from '../triangular/triangular';
+import fibonacci from '../fibonacci/fibonacci';
 
-
-import primo from './primo';
-import triangular from './triangular';
-import fibonacci from './fibonacci';
-
-jest.mock('./primo');
-jest.mock('./triangular');
-jest.mock('./fibonacci');
+jest.mock('../primo/primo');
+jest.mock('../triangular/triangular');
+jest.mock('../fibonacci/fibonacci');
 (primo as jest.Mock).mockReturnValue(1);
 (triangular as jest.Mock).mockReturnValue(1);
 (fibonacci as jest.Mock).mockReturnValue(1);

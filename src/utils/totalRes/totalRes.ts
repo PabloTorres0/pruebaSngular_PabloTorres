@@ -1,7 +1,7 @@
 
-import primo from './primo'
-import triangular from './triangular'
-import fibonacci from './fibonacci'
+import primo from '../primo/primo'
+import triangular from '../triangular/triangular'
+import fibonacci from '../fibonacci/fibonacci'
 
 
 const totalRes = (n:number) => {

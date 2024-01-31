@@ -12,7 +12,6 @@ const InputValue : React.FC<Props> = (props) => {
     const sendData = () => {
        
       if (inputValue === ''|| Number(inputValue)<=0){
-            console.log('ingresa valor')
             setWarningValidation(true)
         }
 
@@ -31,8 +30,7 @@ const InputValue : React.FC<Props> = (props) => {
 
         }>
   <fieldset >
-    <legend>BBVA</legend>
-    <label  className="form-label">sad input</label>
+    <legend className='text-bbva-primary'>BBVA</legend>
     <div className="input-group mb-3">
         <input type="number" 
         id="disabledTextInput" 
@@ -40,12 +38,13 @@ const InputValue : React.FC<Props> = (props) => {
         placeholder="Ingresa factor n"
         onChange={(e)=>{
             setInputValue(e.target.value)
+
         }}
       />
-      <button type="submit" className="btn btn-primary">Submit</button>
+      <button type="submit" className="btn btn-primary">Ingresar</button>
     </div>
     {
-      warningValidation ? <label  className="text-danger">Número Necesario</label>:null
+      warningValidation ? <label  className="text-danger">*** Ingresa Número Válido ***</label>:null
       }
   </fieldset>
 </form>

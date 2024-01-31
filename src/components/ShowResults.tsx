@@ -15,14 +15,16 @@ const ShowResults: React.FC<Props>= (props) => {
     const data = props.data
     console.log(data)
   return (
-    <div>
+    <div className=''>
         {
             data.first? (
                 <>
-                    <h1>{`Pirmo de n es: ${data.prim}`}</h1>
-                    <h1>{`Fibbonacci de n es: ${data.fib}`}</h1>
-                    <h1>{`Triangular de n n es: ${data.tri}`}</h1>
-                    <h1>{`Res: ${data.tri}`}</h1>
+                <section className='border rounded p-3 bg_outputs'>
+                    <h5 className='text-light'>{`Pirmo: ${data.prim}`}</h5>
+                    <h5 className='text-light'>{`Fibbonacci: ${data.fib}`}</h5>
+                    <h5 className='text-light'>{`Triangular: ${data.tri}`}</h5>
+                    <h5 className='text-light'>{`Res: ${data.tri}`}</h5>
+                </section>
                 </>
             
             

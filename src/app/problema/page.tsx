@@ -33,11 +33,13 @@ const Page = () => {
   }
 
   return (
-    <div className='container'>
+    <div className='container custome_section'>
+      <div>
         <InputValue getInputData={getInputData}/>
         <SerieComp getData = {getDataRes} n={n}/>
         <ShowResults data={data}/>
     </div>
+      </div>
   )
 }
 

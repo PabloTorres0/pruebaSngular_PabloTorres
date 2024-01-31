@@ -1,0 +1,12 @@
+import React from 'react'
+
+const Footer = () => {
+  return (
+    <footer className='custome_footer p-2'>
+        <div className='text-light text-end '>Pablo Javier Torres Martinez</div>
+        <div className='text-light text-end '>pablo.javier.torres.martinez@gmail.com</div>
+    </footer>
+  )
+}
+
+export default Footer

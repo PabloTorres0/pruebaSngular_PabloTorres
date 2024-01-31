@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const fibonacci = (n:number) => {
     let num1=0;

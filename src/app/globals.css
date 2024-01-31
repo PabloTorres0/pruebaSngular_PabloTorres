@@ -2,7 +2,7 @@
 :root{
     --bbva1:#006EC1;
     --bbva2: #009EE5;
-    --bbuva3:#52BCEC;
+    --bbva3:#52BCEC;
     --bbva4:#89D1F3;
     --bbva5:#B5E5F9;
 
@@ -15,5 +15,48 @@ body{
 
 .custome_navbar{
     background:var(--bbva1);
+    height: 10vh;
+}
+
+.custome_footer{
+    height: 10vh;
+    background:var(--bbva1);
+}
+.custome_section{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.name{
+    color: white;
+    font-size: 10rem;
+    font-weight: bold;
+    background: transparent;
+}
+
+.backgroundInit{
+    background: var(--bbva1);
+}
+.marginNav{
+    padding-left: 1rem;
+    color:white;
+}
+
+.text-nav{
+    color:white;
+}
+.text-nav:hover{
+    color:var(--bbva4)
+}
+
+.bg_outputs{
+    background: var(--bbva1);
+}
+
+.text-bbva-primary{
+    color:var(--bbva1)
 }
 

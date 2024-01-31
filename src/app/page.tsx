@@ -1,11 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+
 
 export default function Home() {
   return (
     <main>
-      <div >
+      <div className="custome_section backgroundInit">
         
+        <h1 className="name">
+          BBVA
+        </h1>
 
       </div>
     </main>

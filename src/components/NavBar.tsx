@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
 					BBVA
 				</a>
 				<a className='navbar-brand text-nav' href='/problema'>
-					Problema
+					/ Problema
 				</a>
 			</div>
 		</nav>

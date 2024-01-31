@@ -20,7 +20,7 @@ const InputValue : React.FC<Props> = (props) => {
         } 
     }
 
-    const onChange = (e)=>{
+    const onChange = (e:any)=>{
       setInputValue(e.target.value)
       props.getInputData(0)
     }

@@ -7,10 +7,9 @@ interface Props{
 
 const InputValue : React.FC<Props> = (props) => {
 
-    const [inputValue, setInputValue] : string = React.useState('')
+    const [inputValue, setInputValue] = React.useState('')
     const [warningValidation, setWarningValidation] = React.useState(false)
     const sendData = () => {
-       
       if (inputValue === ''|| Number(inputValue)<=0){
             setWarningValidation(true)
         }
@@ -18,8 +17,12 @@ const InputValue : React.FC<Props> = (props) => {
         else{
           props.getInputData(Number(inputValue))
           setWarningValidation(false)
-        }
-        
+        } 
+    }
+
+    const onChange = (e)=>{
+      setInputValue(e.target.value)
+      props.getInputData(0)
     }
 
   return (
@@ -33,13 +36,12 @@ const InputValue : React.FC<Props> = (props) => {
     <legend className='text-bbva-primary'>BBVA</legend>
     <div className="input-group mb-3">
         <input type="number" 
-        id="disabledTextInput" 
-        className="form-control" 
-        placeholder="Ingresa factor n"
-        onChange={(e)=>{
-            setInputValue(e.target.value)
-            props.getInputData(0)
-        }}
+            id="disabledTextInput" 
+            className="form-control" 
+            placeholder="Ingresa factor n"
+            onChange={(e)=>{
+                onChange(e)
+            }}
       />
       <button type="submit" className="btn btn-primary">Ingresar</button>
     </div>

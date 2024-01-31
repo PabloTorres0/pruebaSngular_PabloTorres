@@ -2,7 +2,7 @@ import primo from '../primo/primo'
 import triangular from '../triangular/triangular'
 import fibonacci from '../fibonacci/fibonacci'
 
-const totalRes = (n: number) => {
+const totalRes = (n: number):object => {
 	const prim = primo(n)
 	const fib = fibonacci(n)
 	const tri = triangular(n + 1)

@@ -1,4 +1,4 @@
-export default function Home(): React.FC {
+const Home:React.FC = () => {
 	return (
 		<main>
 			<div className='custome_section backgroundInit'>
@@ -7,3 +7,5 @@ export default function Home(): React.FC {
 		</main>
 	)
 }
+
+export default Home

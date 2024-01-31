@@ -1,60 +1,57 @@
-
-:root{
-    --bbva1:#006EC1;
-    --bbva2: #009EE5;
-    --bbva3:#52BCEC;
-    --bbva4:#89D1F3;
-    --bbva5:#B5E5F9;
+:root {
+	--bbva1: #006ec1;
+	--bbva2: #009ee5;
+	--bbva3: #52bcec;
+	--bbva4: #89d1f3;
+	--bbva5: #b5e5f9;
 }
 
-body{
-    background: white;
+body {
+	background: white;
 }
 
-.custome_navbar{
-    background:var(--bbva1);
-    height: 10vh;
+.custome_navbar {
+	background: var(--bbva1);
+	height: 10vh;
 }
 
-.custome_footer{
-    height: 10vh;
-    background:var(--bbva1);
+.custome_footer {
+	height: 10vh;
+	background: var(--bbva1);
 }
-.custome_section{
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.name{
-    color: white;
-    font-size: 10rem;
-    font-weight: bold;
-    background: transparent;
+.custome_section {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.backgroundInit{
-    background: var(--bbva1);
-}
-.marginNav{
-    padding-left: 1rem;
-    color:white;
-}
-
-.text-nav{
-    color:white;
-}
-.text-nav:hover{
-    color:var(--bbva4)
+.name {
+	color: white;
+	font-size: 10rem;
+	font-weight: bold;
+	background: transparent;
 }
 
-.bg_outputs{
-    background: var(--bbva1);
+.backgroundInit {
+	background: var(--bbva1);
+}
+.marginNav {
+	padding-left: 1rem;
+	color: white;
 }
 
-.text-bbva-primary{
-    color:var(--bbva1)
+.text-nav {
+	color: white;
+}
+.text-nav:hover {
+	color: var(--bbva4);
 }
 
+.bg_outputs {
+	background: var(--bbva1);
+}
+
+.text-bbva-primary {
+	color: var(--bbva1);
+}

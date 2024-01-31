@@ -13,7 +13,7 @@ interface Props {
 const ShowResults: React.FC<Props>= (props) => {
 
     const data = props.data
-    console.log(data)
+    //console.log(data)
   return (
     <div className=''>
         {
@@ -23,7 +23,7 @@ const ShowResults: React.FC<Props>= (props) => {
                     <h5 className='text-light'>{`Pirmo: ${data.prim}`}</h5>
                     <h5 className='text-light'>{`Fibbonacci: ${data.fib}`}</h5>
                     <h5 className='text-light'>{`Triangular: ${data.tri}`}</h5>
-                    <h5 className='text-light'>{`Res: ${data.tri}`}</h5>
+                    <h5 className='text-light'>{`Res: ${data.finalRes}`}</h5>
                 </section>
                 </>
             

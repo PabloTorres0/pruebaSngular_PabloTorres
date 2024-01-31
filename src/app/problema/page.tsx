@@ -1,8 +1,9 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import InputValue from '../../components/InputValue'
-import SerieComp from '@/components/SerieComp'
+import CompleteSerie from '@/components/CompleteSerie'
 import ShowResults from '../../components/ShowResults'
+import totalRes from '@/utils/totalRes'
 
 interface Dataa {
   prim: number;
@@ -17,7 +18,7 @@ const Page = () => {
   const [data, setData] = React.useState({prim:0, fib:0, tri:0, finalRes:0, first:false})
   const [n, setN] = React.useState(0)
 
-  const getDataRes = (prim:number, fib:number, tri:number, finalRes:number) => {
+ /* const getDataRes = (prim:number, fib:number, tri:number, finalRes:number) => {
 
     setData({
       prim,
@@ -27,16 +28,20 @@ const Page = () => {
       first:true
     })
 
-  }
+  }*/
   const getInputData = (num:number) => {
     setN(num)
   }
+
+  useEffect(()=>{
+    setData(totalRes(n))
+  },[n])
 
   return (
     <div className='container custome_section'>
       <div>
         <InputValue getInputData={getInputData}/>
-        <SerieComp getData = {getDataRes} n={n}/>
+      
         <ShowResults data={data}/>
     </div>
       </div>
